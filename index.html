@@ -21,7 +21,7 @@
       .remark-slide-content {
         background-size: contain;
         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-        font-size: calc(.85em + 3vw);
+        font-size: calc(.85em + 2vw);
         padding: 1rem 4rem;
       }
       .remark-slide-content h1 {
@@ -83,7 +83,19 @@ Also, [here's the source](https://github.com/chadoh/git-by-metaphor)
 
 ---
 
-## Git by Metaphor
+class: small
+
+# *Git* by Metaphor
+
+A talk for anyone who wants to be better at computers.
+
+---
+
+class: small
+
+# *Version Control* by Metaphor
+
+A talk for anyone who wants to be better at computers.
 
 --
 
@@ -97,15 +109,67 @@ Also, [here's the source](https://github.com/chadoh/git-by-metaphor)
 --
     * storytelling
 --
-3. Art/Science
+    * field notes
 
 ---
 
-# More Joy &amp; Metaphor
+# Why Metaphors Matter
+
+---
+
+[!["git gets easier once you get the basic idea that branches are homeomorphic endofunctors mapping submanifolds of a Hilbert space."](img/tabqwerty.png)](https://twitter.com/tabqwerty/status/45611899953491968)
+
+---
+
+[![Atlassian's description of git](img/atlassian.png)](https://www.atlassian.com/git/tutorials/what-is-git)
 
 ???
 
-Why metaphors matter.
+All of these descriptions assume an audience who already know what "version control" is and why someone would want it. Beginners have been learning *only git* since at least 2010, so educators should not assume knowledge of some other version control system.
+
+When we explain git, we must explain the concept of version control in general.
+
+# TODO: convert this slide to text, add one sentence at a time
+
+---
+
+"I couldn't do it. I couldn't reduce it to the freshman level. That means we really don't understand it."
+
+--
+
+– [Richard Feynman](https://en.wikiquote.org/w/index.php?title=Talk:Richard_Feynman&oldid=2476304)
+
+---
+
+# Metaphors tell us *how to think*
+
+---
+
+# Metaphors tell us *how to use something*
+
+---
+
+Metaphors
+
+---
+
+Metaphors are
+
+--
+
+# as important for *beginners* as for *experts*
+
+---
+
+## *What is* git?
+
+---
+
+## *How should we think about* git?
+
+---
+
+# *Climbing*
 
 ---
 
@@ -113,12 +177,247 @@ background-image: url(./img/hexcentrics.jpg)
 
 ???
 
-Climbing, https://en.wikipedia.org/wiki/Hex_(climbing)
+Hex clips, https://en.wikipedia.org/wiki/Hex_(climbing)
 
 ---
 
-# Storytelling
+background-image: url(img/climbing-with-pitons.jpg)
 
+???
+
+You can see his tidy series of "clips"/"pieces of protection".
+
+He might be using _pitons_ or _hexes_ or _nuts_. In git, these are analagous to _commits_.
+
+---
+
+Let's try it.
+
+???
+
+Walk through starting to write a novel using git. Use an example from https://www.gutenberg.org/browse/scores/top
+
+---
+
+# What can we learn from this metaphor?
+
+---
+
+background-image: url(img/whipper.gif)
+
+---
+
+Climbing metaphor, *lesson 1*
+
+# Commit often!
+
+---
+
+# Other lessons?
+
+---
+
+background-image: url(img/climbing-with-pitons.jpg)
+
+???
+
+Imagine this climber is exploring a first ascent; something that's never been climbed before, and he runs into...
+
+* something he can't climb
+* a dangerous situation like a bees nest
+
+...What will he do?
+
+Fall back to the previous "save point" and explore a new route!
+
+---
+
+Climbing metaphor, *lesson 2*
+
+# We are always on our *first ascent*
+
+--
+
+We are always climbing something that's never been climbed before
+
+---
+
+Climbing metaphor, *lesson 2*
+
+# We are always on our *first ascent*
+
+We may run into something we can't climb
+
+---
+
+Climbing metaphor, *lesson 2*
+
+# We are always on our *first ascent*
+
+We never know where we'll find a *hive 🐝 of 🐝 bees*
+
+---
+
+Climbing metaphor, *lesson 2*
+
+# We are always on our *first ascent*
+
+*git branches* give us a two-routes-at-once advantage every climber wishes they had!
+
+---
+
+Let's try it.
+
+???
+
+Walk through feeling uncertain which direction to take the novel in.
+
+* Create a branch for `chapter-3-wonder` and commit Chapter 3 from Alice in Wonderland.
+* Create a branch for `chapter-3-monster` and commit Chapter 3 from Frankenstein
+
+---
+
+# Other lessons?
+
+---
+
+Climbing metaphor, *lesson 3*
+
+# Commit messages don't matter
+
+--
+
+# 😞
+
+---
+
+background-image: url(img/git_commit_2x.png)
+
+???
+
+It's this sort of operating metaphor for git that makes a lot of people write commit messages like this.
+
+https://xkcd.com/1296/
+
+---
+
+# Why do commit messages matter?
+
+
+???
+
+Walk through examples of using `git blame` and `tig` to explore commit history.
+
+---
+
+# Can we find a better metaphor?
+
+--
+
+One that helps us appreciate and understand commit messages?
+
+---
+
+
+
+
+
+
+
+# *Storytelling*
+
+---
+
+A *super* exciting story about
+
+# how our project changes over time
+
+---
+
+background-image: url(img/flipboard-for-iphone.png)
+
+???
+
+On at least one occassion, commit messages have been compiled into an actual hard-bound book:
+
+https://craigmod.com/journal/digital_physical/
+
+&gt; Then at the back: the commits. All 9,569 of them. As you flip through this high-resolution macro view of the commit stack, the very texture of the page changes as new developers join the project; as the software jumps into different phases of development.
+
+---
+
+# what is a *commit* in this metaphor?
+
+---
+
+# each commit is a *paragraph*
+
+---
+
+# what makes a paragraph *good*?
+
+---
+
+storytelling metaphor, *lesson 1*
+
+# commit messages require *artistry*
+
+???
+
+Walk through:
+
+1. creating a new branch
+2. adding a paragraph of http://www.rygo-ipsum.com, commiting
+3. adding a paragraph of http://saganipsum.com, commiting
+4. changing first paragraph, commiting
+5. adding third paragraph from https://hipsum.co, commiting
+6. editing all three, then cleaning up commits
+
+---
+
+# other lessons?
+
+--
+
+I'm asking you
+
+---
+
+One last metaphor
+
+---
+
+# *Field Notes*
+
+--
+
+An extension of the *storytelling* metaphor
+
+--
+
+commit messages [as notebook entries](https://github.com/chadoh/2018workshop)
+
+---
+
+class: small
+
+# Git by Metaphor
+
+A talk for anyone who wants to be better at computers.
+
+1. Why Metaphors Matter
+2. What is git?
+    * climbing
+    * storytelling
+    * field notes
+
+---
+
+# Further Learning
+
+* [think like (a) git](http://think-like-a-git.net)
+* [git for ages 4 and up](https://www.youtube.com/watch?v=1ffBJ4sVUb4)
+* [how to write a git commit message](https://chris.beams.io/posts/git-commit/)
 
     </textarea>
     <script src="remark-latest.min.js"></script>
